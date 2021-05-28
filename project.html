@@ -1,0 +1,66 @@
+<!doctype html>
+<head>
+    <!-- Required meta tags -->
+ /   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="project.css">
+    <title>Ödev 6</title>
+</head>
+
+<body>
+<div class="container">
+    <h1 class="app-title" id="header">Takim Projesi</h1>
+    <div class="contains">
+        <div class="card" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="card-header">
+                Bekleyen İşler
+                <div id="add">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="card" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="card-header">
+                Devam Eden İşler
+            </div>
+        </div>
+        <div class="card" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="card-header">
+                Biten İşler
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Görev Ekle
+            </div>
+            <div class="card-body">
+                <form id="addTaskForm">
+                    <div class="input-group">
+                        <input id="txtTaskName" name="taskName" type="text" placeholder="Yeni görev gir" ><br>
+                        <textarea name="textAreaDetails" id="textAreaDetails" cols="18" rows="2"></textarea><br>
+                        <input id = "dateAndTime" type="date">
+                        <div class="input-group-append">
+                            <input type="submit" id="btnAddNewTask" value="Görev Ekle">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <input type="submit" id="btnDeleteAll" value="Tümünü Sil" >
+            <div id="delete-item" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="project.js"></script>
+</body>
+
+</html>
